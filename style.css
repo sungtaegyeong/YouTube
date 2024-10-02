@@ -418,9 +418,12 @@ main .video .fa-solid {
   .responsiveVoice {
     display: inline-block;
   }
-  header .icons .fa-magnifying-glass,
+  /* header .icons .fa-magnifying-glass,
   .fa-microphone {
     padding: 13px;
+  } */
+  header .icons i {
+    padding: 8px;
   }
   header .icons .responsiveSearch .fa-magnifying-glass:hover {
     border: none solid var(--dark-gray-color);
