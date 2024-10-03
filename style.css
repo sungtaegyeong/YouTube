@@ -206,6 +206,10 @@ main .menu ul li {
   height: 20px;
 }
 
+main .menu ul .fa-copy {
+  display: none;
+}
+
 main .menu ul li:hover {
   border: none;
   border-radius: 10px;
@@ -394,6 +398,9 @@ main .video .fa-solid {
   }
   main {
     padding: 60px 18px 5px 5px;
+  }
+  main .menu ul .fa-copy {
+    display: flex;
   }
 }
 
