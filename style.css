@@ -361,7 +361,7 @@ main .video .fa-solid {
   main .menu ul .asideMenu {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 40px;
     align-items: center;
     justify-content: center;
     padding: 25px 15px;
@@ -380,10 +380,9 @@ main .video .fa-solid {
   hr {
     display: none;
   }
-  main .menu,
   main .genre,
   main .video {
-    position: static;
+    left: 70px;
   }
   main {
     padding: 60px 18px 5px 5px;
@@ -401,6 +400,10 @@ main .video .fa-solid {
   hr,
   .subscribe {
     display: none;
+  }
+  main .genre,
+  main .video {
+    left: auto;
   }
 }
 
