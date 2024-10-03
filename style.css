@@ -255,12 +255,18 @@ main .menu .more .fa-circle-play,
 }
 
 main .genre {
-  padding: 15px 20px;
+  padding: 15px 0;
+  margin: 0 20px;
   position: fixed;
   background-color: var(--black-color);
   width: calc(100% - 40px);
   left: 238px;
   z-index: 1;
+  overflow: scroll;
+}
+
+main .genre::-webkit-scrollbar {
+  display: none;
 }
 
 main .genre ul {
@@ -284,7 +290,6 @@ main .genre ul li button span {
   background-color: var(--dark-gray-color);
   padding: 8px 11px;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 
