@@ -258,7 +258,7 @@ main .genre {
   padding: 15px 20px;
   position: fixed;
   background-color: var(--black-color);
-  width: 100%;
+  width: auto;
   left: 238px;
   z-index: 1;
 }
@@ -366,9 +366,9 @@ main .video .fa-solid {
     justify-content: center;
     padding: 25px 15px;
     font-size: 10px;
-    span {
-      margin: 5px 0;
-    }
+  }
+  main .menu ul .asideMenu span {
+    margin: 5px 0;
   }
   main .menu ul li,
   main .menu .subscribe {
