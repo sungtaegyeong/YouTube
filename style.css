@@ -246,6 +246,11 @@ main .menu .subscribe li {
   align-items: center;
 }
 
+main .menu ul .moreSubscribe,
+main .menu ul .less {
+  display: none;
+}
+
 main .menu .subscribe img {
   border: none solid var(--black-color);
   border-radius: 100%;
