@@ -210,7 +210,7 @@ main .menu ul .fa-copy {
   display: none;
 }
 
-main .menu ul li:hover {
+main .menu ul li:not(.noBorder):hover {
   border: none;
   border-radius: 10px;
   background-color: var(--dark-gray-color);
