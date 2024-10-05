@@ -336,6 +336,10 @@ main .video .info span {
   padding: 2px;
 }
 
+main .video .info .name:hover {
+  color: var(--white-color);
+}
+
 main .video .info .title {
   display: -webkit-box;
   -webkit-line-clamp: 2;
