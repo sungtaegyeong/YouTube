@@ -387,6 +387,9 @@ main .video .fa-solid {
     overflow: hidden;
     flex-shrink: 0;
   }
+  main .menu ul .asideMenu .rightArrow {
+    display: none;
+  }
   main .menu ul li,
   main .menu .subscribe {
     display: none;
