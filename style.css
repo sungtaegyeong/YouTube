@@ -55,7 +55,6 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
 }
 
 header .barAndLogo {
@@ -139,7 +138,7 @@ header .searchBox .search .searchIcons .fa-microphone {
 }
 
 header .icons {
-  white-space: nowrap;
+  display: flex;
 }
 
 header .icons .responsiveSearch,
@@ -147,22 +146,11 @@ header .icons .responsiveSearch,
   display: none;
 }
 
-header .icons .fa-video,
-.fa-bell {
+header .icons i {
   padding: 13px;
 }
 
-header .icons .account {
-  margin: 13px;
-}
-
-header .icons .make .fa-video:hover {
-  border: none solid var(--dark-gray-color);
-  border-radius: 100%;
-  background-color: var(--dark-gray-color);
-}
-
-header .icons .notification .fa-bell:hover {
+header .icons i:hover {
   border: none solid var(--dark-gray-color);
   border-radius: 100%;
   background-color: var(--dark-gray-color);
@@ -175,6 +163,7 @@ header .icons .account {
   width: 30px;
   height: 30px;
   text-align: center;
+  margin: 13px;
 }
 
 header .icons .username {
@@ -283,7 +272,7 @@ main .genre ul {
 }
 
 main .genre ul li {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 main .genre ul span:hover {
@@ -445,24 +434,14 @@ main .video .fa-solid {
 }
 
 @media screen and (max-width: 654px) {
-  header .searchBox .search {
+  header .searchBox {
     display: none;
   }
   header .icons .responsiveSearch,
   .responsiveVoice {
-    display: inline-block;
+    display: block;
   }
   header .icons i {
-    padding: 8px;
-  }
-  header .icons .responsiveSearch .fa-magnifying-glass:hover {
-    border: none solid var(--dark-gray-color);
-    border-radius: 100%;
-    background-color: var(--dark-gray-color);
-  }
-  header .icons .responsiveVoice .fa-microphone:hover {
-    border: none solid var(--dark-gray-color);
-    border-radius: 100%;
-    background-color: var(--dark-gray-color);
+    padding: 10px;
   }
 }
