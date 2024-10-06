@@ -383,14 +383,19 @@ main .video .fa-solid {
   main .menu ul .asideMenu {
     display: flex;
     flex-direction: column;
-    width: 40px;
+    width: 70px;
     align-items: center;
     justify-content: center;
-    padding: 25px 15px;
+    padding: 28px 0;
     font-size: 10px;
+    gap: 10px;
   }
   main .menu ul .asideMenu span {
-    margin: 5px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
   }
   main .menu ul li,
   main .menu .subscribe {
@@ -398,6 +403,7 @@ main .video .fa-solid {
   }
   main .menu ul li i {
     margin: 0;
+    width: auto;
   }
   hr {
     display: none;
