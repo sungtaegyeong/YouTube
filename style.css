@@ -258,7 +258,7 @@ main .genre {
   margin: 0 20px;
   position: fixed;
   background-color: var(--black-color);
-  width: calc(100% - 40px);
+  width: calc(100% - 278px);
   left: 238px;
   z-index: 1;
   overflow: scroll;
@@ -408,6 +408,9 @@ main .video .fa-solid {
   main .menu ul .fa-copy {
     display: flex;
   }
+  main .genre {
+    width: calc(100% - 120px);
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -425,6 +428,9 @@ main .video .fa-solid {
   main .genre,
   main .video {
     left: auto;
+  }
+  main .genre {
+    width: calc(100% - 40px);
   }
 }
 
