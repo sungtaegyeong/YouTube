@@ -330,6 +330,7 @@ main .video .info {
   display: flex;
   flex-direction: column;
   padding: 0 10px;
+  align-items: flex-start;
 }
 
 main .video .info span {
