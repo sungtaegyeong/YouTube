@@ -1,5 +1,4 @@
 :root {
-  /* Color */
   --white-color: #fff;
   --black-color: #0f0f0f;
   --red-color: #ff0000;
@@ -8,9 +7,6 @@
   --dark-gray-color: #222222;
   --brown-color: #5d4138;
   --blue-color: #0000ff;
-
-  /* Size */
-  --spacing: 12px;
 }
 
 * {
@@ -18,6 +14,7 @@
   margin: 0;
   color: var(--white-color);
   background-color: var(--black-color);
+  box-sizing: border-box;
 }
 
 ul {
@@ -25,7 +22,7 @@ ul {
 }
 
 i {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 button {
@@ -43,19 +40,19 @@ a {
 
 body {
   font-family: Roboto;
+  font-size: 0.875rem;
 }
 
 header {
-  padding: 0px 18px;
+  padding: 0px 1rem;
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
   align-items: center;
   position: fixed;
-  top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  height: 3.5rem;
 }
 
 header .barAndLogo {
@@ -63,79 +60,74 @@ header .barAndLogo {
 }
 
 header .barAndLogo .bar .fa-bars {
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 header .barAndLogo .bar .fa-bars:hover {
-  border: none solid var(--dark-gray-color);
   border-radius: 100%;
   background-color: var(--dark-gray-color);
 }
 
 header .barAndLogo .logo {
   white-space: nowrap;
+  padding: 1rem 1.25rem;
+  padding-right: 0;
 }
 
 header .barAndLogo .logo .fa-youtube {
-  margin: 20px;
-  margin-right: 0;
   color: var(--red-color);
 }
 
 header .barAndLogo .logo .premium {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 header .searchBox {
   white-space: nowrap;
-  width: 670px;
-  padding: 0 70px;
-}
-
-header .searchBox .search {
+  width: 50.625rem;
+  padding: 0 5rem;
   display: flex;
   position: relative;
 }
 
-header .searchBox .search .searchTxt {
+header .searchBox .searchTxt {
   border-radius: 30px 0 0 30px;
-  padding: 8px 15px;
+  padding: 0.5rem 1rem;
   width: 100%;
-  height: 40px;
-  font-size: 16px;
+  height: 2.5rem;
+  font-size: 1rem;
   border: 1px solid var(--light-gray-color);
 }
 
-header .searchBox .search .searchTxt:focus {
+header .searchBox .searchTxt:focus {
   outline: none;
   border: 1px solid var(--blue-color);
 }
 
-header .searchBox .search .searchIcons .keyboard {
+header .searchBox .searchIcons .keyboard {
   position: absolute;
-  right: 130px;
-  bottom: 12px;
+  right: 13rem;
+  bottom: 0.625rem;
 }
 
-header .searchBox .search .searchIcons .fa-magnifying-glass {
+header .searchBox .searchIcons .fa-magnifying-glass {
   border: 1px solid var(--light-gray-color);
   border-radius: 0 30px 30px 0;
-  width: 60px;
-  height: 38px;
+  width: 4rem;
+  height: 2.5rem;
   text-align: center;
-  line-height: 40px;
+  line-height: 2.5rem;
   background-color: var(--dark-gray-color);
 }
 
-header .searchBox .search .searchIcons .fa-microphone {
-  border: 1px solid var(--dark-gray-color);
+header .searchBox .searchIcons .fa-microphone {
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   text-align: center;
-  line-height: 40px;
+  line-height: 2.5rem;
   background-color: var(--dark-gray-color);
-  margin-left: 10px;
+  margin-left: 0.75rem;
 }
 
 header .icons {
@@ -158,49 +150,43 @@ header .icons i:hover {
 }
 
 header .icons .account {
-  border: none solid var(--brown-color);
   border-radius: 100%;
   background-color: var(--brown-color);
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
   text-align: center;
   margin: 13px;
 }
 
 header .icons .username {
-  font-size: 14px;
+  font-size: 0.875rem;
   background-color: var(--brown-color);
 }
 
-main {
-  display: flex;
-  padding: 5px 18px;
-  font-size: 14px;
-  padding-top: 60px;
-}
-
-main .menu {
+.menu {
   display: flex;
   position: fixed;
   z-index: 1;
-}
-
-main .menu ul {
+  top: 3.5rem;
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  flex-direction: column;
   height: 100vh;
   overflow-y: scroll;
+  align-items: center;
 }
 
-main .menu ul li {
-  padding: 10px;
-  width: 200px;
-  height: 20px;
+.menu ul li {
+  padding: 0.75rem;
+  width: 12.5rem;
+  height: 2.5rem;
 }
 
-main .menu ul .fa-copy {
+.menu ul .fa-copy {
   display: none;
 }
 
-main .menu ul li:not(.noBorder):hover {
+.menu ul li:not(.noBorder):hover {
   border: none;
   border-radius: 10px;
   background-color: var(--dark-gray-color);
@@ -210,235 +196,229 @@ main .menu ul li:not(.noBorder):hover {
   }
 }
 
-main .menu li i,
-main .menu img {
+.menu li i,
+.menu img {
   margin-right: 25px;
-  width: 20px;
+  width: 1.25rem;
 }
 
-main .menu hr {
+.menu hr {
   border: 1px solid var(--dark-gray-color);
   margin: 10px 0;
   width: 210px;
 }
 
-main .menu .secondLine,
+.menu .secondLine,
 .thirdLine,
 .fourthLine,
 .fifthLine,
 .sixthLine {
   position: relative;
-  right: 18px;
+  width: 100%;
 }
 
-main .menu .subscribe li {
+.menu .subscribe li {
   display: flex;
   align-items: center;
 }
 
-main .menu ul .moreSubscribe,
-main .menu ul .less {
+.menu ul .moreSubscribe,
+.menu ul .less {
   display: none;
 }
 
-main .menu .subscribe img {
+.menu .subscribe img {
   border: none solid var(--black-color);
   border-radius: 100%;
   width: 24px;
   margin-right: 22px;
 }
 
-main .menu .more .fa-circle-play,
+.menu .more .fa-circle-play,
 .fa-square-youtube {
   color: var(--red-color);
 }
 
-main .genre {
-  padding: 15px 0;
-  margin: 0 20px;
+.genre {
+  padding: 1rem 1.5rem;
   position: fixed;
-  background-color: var(--black-color);
-  width: calc(100% - 278px);
-  left: 238px;
+  width: calc(100% - 234px);
+  left: 14.625rem;
   z-index: 1;
   overflow: scroll;
+  top: 3.5rem;
 }
 
-main .genre::-webkit-scrollbar {
+.genre::-webkit-scrollbar {
   display: none;
 }
 
-main .genre ul {
+.genre ul {
   display: flex;
+  gap: 10px;
 }
 
-main .genre ul li {
-  margin-right: 10px;
-}
-
-main .genre ul span:hover {
-  border: 1px solid var(--white-color);
-  border-radius: 10px;
-  background-color: var(--white-color);
-  color: var(--black-color);
-}
-
-main .genre ul li button span {
-  border: 1px solid var(--dark-gray-color);
-  border-radius: 10px;
+.genre ul li button {
+  border-radius: 0.5rem;
   background-color: var(--dark-gray-color);
-  padding: 8px 11px;
+  padding: 0.5rem 0.75rem;
   white-space: nowrap;
   overflow: hidden;
 }
 
-main .video {
-  display: flex;
-  padding: 10px;
-  position: absolute;
-  top: 107px;
-  left: 238px;
+.genre ul li button:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
-main .video ul {
+.video {
+  display: flex;
+  padding: 0.75rem;
+  position: absolute;
+  top: 7.5rem;
+  left: 14.625rem;
+}
+
+.video ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-main .video ul li {
+.video ul li {
   display: flex;
   flex-direction: column;
-  padding: 20px 10px;
+  padding: 1.25rem 10px;
 }
 
-main .video .avatarAndInfo {
+.video .avatarAndInfo {
   display: flex;
   padding: 5px 0;
 }
 
-main .video .info {
+.video .info {
   display: flex;
   flex-direction: column;
   padding: 0 10px;
   align-items: flex-start;
 }
 
-main .video .info span {
+.video .info span {
   padding: 2px;
 }
 
-main .video .info .name:hover {
+.video .info .name:hover {
   color: var(--white-color);
 }
 
-main .video .info .title {
+.video .info .title {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-size: 1rem;
 }
 
-main .video .thumbnail img {
+.video .thumbnail img {
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 5%;
 }
 
-main .video .avatar img {
-  width: 35px;
+.video .avatar img {
+  width: 2.25rem;
   border-radius: 50%;
 }
 
-main .video .title {
-  font-size: 17px;
-}
-
-main .video .name,
+.video .name,
 .viewsAndTime {
   font-size: 14px;
   color: var(--gray-color);
 }
 
-main .video .fa-solid {
+.video .fa-solid {
   margin-left: auto;
 }
 
 @media screen and (max-width: 1575px) {
-  main .video ul {
+  .video ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 1312px) {
-  main .menu ul .asideMenu {
+  .menu {
+    padding: 0.25rem;
+  }
+  .menu ul .asideMenu {
     display: flex;
     flex-direction: column;
-    width: 70px;
+    width: 4rem;
     align-items: center;
     justify-content: center;
-    padding: 28px 0;
+    height: 80px;
     font-size: 10px;
     gap: 10px;
+    padding: 0.25rem 0;
   }
-  main .menu ul .asideMenu span {
+  .menu ul .asideMenu span {
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 100%;
     overflow: hidden;
     flex-shrink: 0;
   }
-  main .menu ul .asideMenu .rightArrow {
+  .menu ul .asideMenu .greaterThan {
     display: none;
   }
-  main .menu ul li,
-  main .menu .subscribe {
+  .menu ul li,
+  .menu .subscribe {
     display: none;
   }
-  main .menu ul li i {
+  .menu ul li i {
     margin: 0;
     width: auto;
   }
   hr {
     display: none;
   }
-  main .genre,
-  main .video {
-    left: 80px;
+  .genre,
+  .video {
+    left: 4.5rem;
   }
-  main {
-    padding: 60px 18px 5px 5px;
+  .video {
+    padding: 1rem 18px 5px 18px;
   }
-  main .menu ul .fa-copy {
+  .menu ul .fa-copy {
     display: flex;
   }
-  main .genre {
-    width: calc(100% - 120px);
+  .genre {
+    width: calc(100% - 72px);
   }
 }
 
 @media screen and (max-width: 1080px) {
-  main .video ul {
+  .video ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 791px) {
-  main .menu ul,
+  .menu ul,
   hr,
   .subscribe {
     display: none;
   }
-  main .genre,
-  main .video {
+  .genre,
+  .video {
     left: auto;
   }
-  main .genre {
-    width: calc(100% - 40px);
+  .genre {
+    width: calc(100% - 8px);
   }
 }
 
 @media screen and (max-width: 683px) {
-  main .video ul {
+  .video ul {
     grid-template-columns: repeat(1, 1fr);
   }
 }
