@@ -171,7 +171,7 @@ header .icons .username {
   font-size: 0.875rem;
   padding: 0.75rem;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100% - 56px);
   overflow-y: scroll;
   align-items: center;
 }
@@ -205,16 +205,10 @@ header .icons .username {
 .menu hr {
   border: 1px solid var(--dark-gray-color);
   margin: 10px 0;
-  width: 210px;
 }
 
-.menu .secondLine,
-.thirdLine,
-.fourthLine,
-.fifthLine,
-.sixthLine {
-  position: relative;
-  width: 100%;
+.menu > hr {
+  width: calc(100% + 1.5rem);
 }
 
 .menu .subscribe li {
