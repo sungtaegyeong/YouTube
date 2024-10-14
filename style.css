@@ -208,9 +208,10 @@ header .icons .username {
 .menu hr {
   border: 1px solid var(--dark-gray-color);
   margin: 0.625rem 0;
+  width: 100%;
 }
 
-.menu > hr {
+.menu hr:not(.mainMenuHr) {
   width: calc(100% + 1.5rem);
 }
 
