@@ -177,7 +177,7 @@ header .icons .username {
 }
 
 .menu ul li {
-  padding: 0 0.75rem;
+  padding: 0.75rem;
   width: 12.5rem;
   height: 2.5rem;
   display: flex;
@@ -211,7 +211,7 @@ header .icons .username {
   width: 100%;
 }
 
-.menu hr:not(.mainMenuHr) {
+.menu hr:not(.shortHr) {
   width: calc(100% + 1.5rem);
 }
 
