@@ -177,7 +177,7 @@ header .icons .username {
 }
 
 .menu ul li {
-  padding: 0.75rem;
+  padding: 0 0.75rem;
   width: 12.5rem;
   height: 2.5rem;
   display: flex;
@@ -189,11 +189,11 @@ header .icons .username {
 }
 
 .menu ul li:not(.noBorder):hover {
-  border: none;
   border-radius: 10px;
   background-color: var(--dark-gray-color);
   i,
-  span {
+  span,
+  a {
     background-color: var(--dark-gray-color);
   }
 }
@@ -212,11 +212,6 @@ header .icons .username {
 
 .menu > hr {
   width: calc(100% + 1.5rem);
-}
-
-.menu .subscribe li {
-  display: flex;
-  align-items: center;
 }
 
 .menu .subscribe .moreSubscribe,
